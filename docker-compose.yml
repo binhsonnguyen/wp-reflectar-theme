@@ -14,7 +14,7 @@ services:
       WORDPRESS_DB_NAME: $DB_NAME
     volumes:
       - app:/var/www/html
-      - ./src:/var/www/html/wp-content/themes/underscored
+      - ./src:/var/www/html/wp-content/themes/reflectar
 
   db:
     image: mysql
