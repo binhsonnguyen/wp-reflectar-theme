@@ -3,8 +3,10 @@ language: minimal
 services:
   - docker
 
+before_script: cd src
+
 jobs:
   include:
     - stage: composer
       script:
-        - docker run --rm --interactive --tty --volume src:/app composer install
+        - docker run --rm --interactive --tty --volume $PWD:/app composer install
