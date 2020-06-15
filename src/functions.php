@@ -7,9 +7,9 @@
  * @package Reflectar
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( 'REFLECTAR_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( 'REFLECTAR_VERSION', '0.0.1' );
 }
 
 if ( ! function_exists( 'reflectar_setup' ) ) :
@@ -143,7 +143,7 @@ add_action( 'widgets_init', 'reflectar_widgets_init' );
  * Enqueue scripts and styles.
  */
 function reflectar_scripts() {
-	wp_enqueue_style( 'reflectar-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'reflectar-style', get_stylesheet_uri(), array(), REFLECTAR_VERSION );
 	wp_style_add_data( 'reflectar-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'reflectar-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
