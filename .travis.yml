@@ -7,4 +7,4 @@ jobs:
   include:
     - stage: composer
       script:
-        - docker run --rm --interactive --tty --volume ./src:/app composer install
+        - docker run --rm --interactive --tty --volume src:/app composer install
