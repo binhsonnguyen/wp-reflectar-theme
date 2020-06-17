@@ -23,4 +23,4 @@ jobs:
       - chmod 600 production_deploy_key
       - ssh-add production_deploy_key
     script:
-      - ssh $PRODUCTION_USER@$PRODUCTION_SERVER "/bin/bash -s " < "cd /home/ubuntu/wordpress && touch flag"
+      - ssh $PRODUCTION_USER@$PRODUCTION_SERVER "/bin/bash -s " < production_deploy.sh
