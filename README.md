@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/binhsonnguyen/wp-reflectar-theme.svg?branch=master)](https://travis-ci.org/binhsonnguyen/wp-reflectar-theme)
+[![Build Status](https://travis-ci.com/binhsonnguyen/wp-reflectar-theme.svg?branch=master)](https://travis-ci.com/binhsonnguyen/wp-reflectar-theme)
