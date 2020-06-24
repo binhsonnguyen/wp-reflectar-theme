@@ -1,8 +1,8 @@
 // stylelint-disable value-keyword-case
-$font__main: "Noto Serif", Georgia, "Times New Roman", Times, serif;
-$font-size__main: 16px;
+$font__family_main: serif;
+$font__size__main: 16px;
 // stylelint-enable value-keyword-case
-$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+$font__family__code: monospace;
+$font__family__pre: monospace;
+$font__line-height__main: 1.5;
+$font__line-height__pre: 1.6;
