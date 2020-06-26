@@ -90,12 +90,6 @@ body {
 	line-height: 1.5;
 }
 
-::selection {
-	/* Set background color for selected text */
-	background: var(--nc-ac-1);
-	color: var(--nc-ac-tx);
-}
-
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1;
 	color: var(--nc-tx-1);
