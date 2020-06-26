@@ -32,10 +32,12 @@ nav a {
 figcaption {
     font-size: small;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 iframe {
     max-width: 100%;
 }
@@ -44,13 +46,13 @@ iframe {
 Content Width Config
 https://codex.wordpress.org/Content_Width
 */
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
 .size-thumbnail {
-	max-width: 100%;
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* 
@@ -68,7 +70,7 @@ div.aligncenter {
 }
 
 .alignright {
-    float:right;
+    float: right;
     margin: 5px 0 20px 20px;
 }
 
@@ -135,7 +137,9 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
-.sticky { color:red; }
+.sticky {
+    color: red;
+}
 
 /* 
 Text meant only for screen readers.
