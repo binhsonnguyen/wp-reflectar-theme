@@ -1,6 +1,10 @@
 <?php
 /**
  * The functions and definitions.
+ *
+ * @package    newcss
+ * @copyright  Copyright (c) 2020, David Mytton <david@davidmytton.co.uk> (https://davidmytton.blog)
+ * @license    http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  */
 
 if ( ! function_exists( 'newcss_setup' ) ) {
@@ -66,27 +70,4 @@ function newcss_css() {
 }
 
 add_action( 'wp_enqueue_scripts', 'newcss_css' );
-
-function prismjs() {
-	wp_register_style( 'prismCSS', get_template_directory_uri() . '/assets/css/prism.css', false, false, 'all' );
-	wp_register_script( 'prismJS', get_template_directory_uri() . '/assets/js/prism.js', false, false, true );
-
-	global $post, $wp_query;
-	$post_contents = '';
-	if ( is_singular() ) {
-		$post_contents = $post->post_content;
-	} elseif ( is_archive() || ( is_front_page() && is_home() ) ) {
-		$post_ids = wp_list_pluck( $wp_query->posts, 'ID' );
-		foreach ( $post_ids as $post_id ) {
-			$post_contents .= get_post_field( 'post_content', $post_id );
-		}
-	}
-	if ( strpos( $post_contents, '<code class="language-' ) !== false ) {
-		wp_enqueue_style( 'prismCSS' );
-		wp_enqueue_script( 'prismJS' );
-	}
-
-}
-
-add_action( 'wp_enqueue_scripts', 'prismjs' );
 ?>
