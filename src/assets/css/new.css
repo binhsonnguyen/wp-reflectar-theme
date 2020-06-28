@@ -1,31 +1,16 @@
 :root {
 	--nc-font-sans: "Times New Roman", Times, serif;
 	--nc-font-mono: monospace;
-	--nc-tx-1: #000000;
-	--nc-tx-2: #1A1A1A;
-	--nc-bg-1: #FFFFFF;
+	/*--nc-tx-1: #000000;*/
+	/*--nc-tx-2: #1A1A1A;*/
+	/*--nc-bg-1: #FFFFFF;*/
 	--nc-bg-2: #F6F8FA;
 	--nc-bg-3: #E5E7EB;
-	--nc-lk-1: #0070F3;
-	--nc-lk-2: #0366D6;
-	--nc-lk-tx: #FFFFFF;
-	--nc-ac-1: #79FFE1;
-    --nc-ac-tx: #0C4047;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--nc-tx-1: #ffffff;
-		--nc-tx-2: #eeeeee;
-		--nc-bg-1: #000000;
-		--nc-bg-2: #111111;
-		--nc-bg-3: #222222;
-		--nc-lk-1: #3291FF;
-		--nc-lk-2: #0070F3;
-		--nc-lk-tx: #FFFFFF;
-		--nc-ac-1: #7928CA;
-		--nc-ac-tx: #FFFFFF;
-	}
+	/*--nc-lk-1: #0070F3;*/
+	/*--nc-lk-2: #0366D6;*/
+	/*--nc-lk-tx: #FFFFFF;*/
+	/*--nc-ac-1: #79FFE1;*/
+    /*--nc-ac-tx: #0C4047;*/
 }
 
 * {
@@ -82,27 +67,25 @@ body {
 	overflow-x: hidden;
 	word-break: break-word;
 	overflow-wrap: break-word;
-	background: var(--nc-bg-1);
+	/*background: var(--nc-bg-1);*/
 
 	/* Main body text */
-	color: var(--nc-tx-2);
+	/*color: var(--nc-tx-2);*/
 	font-size: 1.03rem;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1;
-	color: var(--nc-tx-1);
+	/*color: var(--nc-tx-1);*/
 	padding-top: .875rem;
 }
 
 h1,
 h2,
 h3 {
-	color: var(--nc-tx-1);
 	padding-bottom: 2px;
 	margin-bottom: 8px;
-	border-bottom: 1px solid var(--nc-bg-2);
 }
 
 h4,
@@ -135,23 +118,9 @@ h6 {
 	font-size: .875rem;
 }
 
-a {
-	color: var(--nc-lk-1);
-}
-
-a:hover {
-	color: var(--nc-lk-2);
-}
-
 abbr:hover {
 	/* Set the '?' cursor while hovering an abbreviation */
 	cursor: help;
-}
-
-blockquote {
-	padding: 1.5rem;
-	background: var(--nc-bg-2);
-	border-left: 5px solid var(--nc-bg-3);
 }
 
 abbr {
@@ -194,51 +163,6 @@ header > *:first-child {
 
 header > *:last-child {
 	margin-bottom: 0;
-}
-
-a button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-	font-size: 1rem;
-	display: inline-block;
-	padding: 6px 12px;
-	text-align: center;
-	text-decoration: none;
-	white-space: nowrap;
-	background: var(--nc-lk-1);
-	color: var(--nc-lk-tx);
-	border: 0;
-	border-radius: 4px;
-	box-sizing: border-box;
-	cursor: pointer;
-	color: var(--nc-lk-tx);
-}
-
-a button[disabled],
-button[disabled],
-input[type="submit"][disabled],
-input[type="reset"][disabled],
-input[type="button"][disabled] {
-	cursor: default;
-	opacity: .5;
-
-	/* Set the [X] cursor while hovering a disabled link */
-	cursor: not-allowed;
-}
-
-.button:focus,
-.button:hover,
-button:focus,
-button:hover,
-input[type="submit"]:focus,
-input[type="submit"]:hover,
-input[type="reset"]:focus,
-input[type="reset"]:hover,
-input[type="button"]:focus,
-input[type="button"]:hover {
-	background: var(--nc-lk-2);
 }
 
 code,
@@ -330,17 +254,9 @@ dd::before {
 	content: '→ ';
 }
 
-hr {
-	/* Reset the border of the <hr> separator, then set a better line */
-	border: 0;
-	border-bottom: 1px solid var(--nc-bg-3);
-	margin: 1rem auto;
-}
-
 fieldset {
 	margin-top: 1rem;
 	padding: 2rem;
-	border: 1px solid var(--nc-bg-3);
 	border-radius: 4px;
 }
 
@@ -399,8 +315,6 @@ ol ol {
 
 mark {
 	padding: 3px 6px;
-	background: var(--nc-ac-1);
-	color: var(--nc-ac-tx);
 }
 
 textarea,
@@ -408,9 +322,6 @@ select,
 input {
 	padding: 6px 12px;
 	margin-bottom: .5rem;
-	background: var(--nc-bg-2);
-	color: var(--nc-tx-2);
-	border: 1px solid var(--nc-bg-3);
 	border-radius: 4px;
 	box-shadow: none;
 	box-sizing: border-box;
