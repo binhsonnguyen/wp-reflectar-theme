@@ -4,8 +4,8 @@
 	/*--nc-tx-1: #000000;*/
 	/*--nc-tx-2: #1A1A1A;*/
 	/*--nc-bg-1: #FFFFFF;*/
-	--nc-bg-2: #F6F8FA;
-	--nc-bg-3: #E5E7EB;
+	--nc-bg-2: #F8F8F8;
+	--nc-bg-3: #E8E8E8;
 	/*--nc-lk-1: #0070F3;*/
 	/*--nc-lk-2: #0366D6;*/
 	/*--nc-lk-tx: #FFFFFF;*/
@@ -210,14 +210,6 @@ code pre {
 	margin: 0;
 }
 
-details {
-	/* Make the <details> look more "clickable" */
-	padding: .6rem 1rem;
-	background: var(--nc-bg-2);
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
-}
-
 summary {
 	/* Makes the <summary> look more like a "clickable" link with the pointer cursor */
 	cursor: pointer;
@@ -246,12 +238,6 @@ dt {
 dd::before {
 	/* Add an arrow to data table definitions */
 	content: '→ ';
-}
-
-fieldset {
-	margin-top: 1rem;
-	padding: 2rem;
-	border-radius: 4px;
 }
 
 legend {
@@ -309,16 +295,6 @@ ol ol {
 
 mark {
 	padding: 3px 6px;
-}
-
-textarea,
-select,
-input {
-	padding: 6px 12px;
-	margin-bottom: .5rem;
-	border-radius: 4px;
-	box-shadow: none;
-	box-sizing: border-box;
 }
 
 img {
