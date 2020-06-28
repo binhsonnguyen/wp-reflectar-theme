@@ -1,20 +1,18 @@
 /*
-Theme Name: newcss
-Theme URI: https://github.com/davidmytton/new.css-wordpress
-Author: David Mytton
-Author URI: https://davidmytton.blog
-Description: A lightweight, minimalist WordPress theme based on https://newcss.net. Autodetects and updates to light/dark mode based on the user setting.
-Tags: blog, one-column, custom-menu, featured-image-header, featured-images
-Version: 1.0.2
+Theme Name: reflectar
+Theme URI: https://github.com/binhsonnguyen/wp-reflectar-theme
+Author: Nguyen Binh Son
+Author URI: https://nguyenbinhson.com
+Description: A lightweight WordPress theme based on https://newcss.net. For minimalist-reflectionist-learners.
+Tags: blog, one-column
+Version: 0.0.1
 Requires at least: 5.4
 Tested up to: 5.4
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: newcss
+Text Domain: reflectar
 */
-
-/* Customisations to make new.css more suitable for blog content */
 
 header h1 a {
     color: var(--nc-tx-1);
