@@ -1,5 +1,6 @@
 :root {
 	--nc-font-sans: PT Sans, 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+	--nc-font-headers: 'Lucida Grande', sans-serif;
 	--nc-font-mono: 'Consolas', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
 	/*--nc-tx-1: #000000;*/
 	/*--nc-tx-2: #1A1A1A;*/
@@ -49,7 +50,6 @@ video {
 }
 
 html,input,select,button {
-	/* Set body font family and some finicky elements */
 	font-family: var(--nc-font-sans);
 }
 
@@ -65,12 +65,12 @@ body {
 	/*background: var(--nc-bg-1);*/
 
 	/* Main body text */
-	/*color: var(--nc-tx-2);*/
 	font-size: 1.03rem;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
+	font-family: var(--nc-font-headers);
 	line-height: 1;
 	/*color: var(--nc-tx-1);*/
 	padding-top: .875rem;
