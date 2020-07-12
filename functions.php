@@ -70,4 +70,9 @@ function newcss_css() {
 }
 
 add_action( 'wp_enqueue_scripts', 'newcss_css' );
+
+# get build status
+function get_build_status() {
+	require 'build_status.php';
+}
 ?>
